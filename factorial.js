@@ -18,10 +18,6 @@ rl.question("Enter your choice (1-3)", choice =>{
     } else if (choice==="2"){
         console.log("Factorial");
         
-
-
-
-
         rl.question("Enter a number for factorial: ", (numStr) =>{
             let num = parseInt(numStr);
 
@@ -39,15 +35,9 @@ rl.question("Enter your choice (1-3)", choice =>{
             }
         });
 
-
-
-
-
-
-
-
     } else if (choice==="3"){
-        console.log("Exit");
+        console.log("Exiting program...Goodbye");
+        rl.close();
     } else{
         console.log("Invalid choice. Please Try Again");
     }
