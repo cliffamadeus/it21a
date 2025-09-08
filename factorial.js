@@ -41,7 +41,10 @@ function mainMenu(){
             rl.close();
         } else{
             console.log("Invalid choice. Please Try Again");
+            mainMenu();
         }
 
     })
 }
+
+mainMenu();
